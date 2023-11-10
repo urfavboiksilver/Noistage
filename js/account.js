@@ -1,4 +1,4 @@
-    // Get references to the modal and buttons
+
     var modal = document.getElementById("myModal");
     var openBtn = document.getElementById("openModalBtn");
     var closeBtn = document.getElementById("closeModalBtn");
@@ -8,12 +8,10 @@
     var accountsite = document.getElementById("accountsite");
     var loginsite= document.getElementById('loginsite');
     var loginbtn = document.getElementById('loginpage');
-    // Open the modal when the "Open Modal" button is clicked
     openBtn.onclick = function() {
         accountmain.classList.add('active');
     }
 
-    // Close the modal when the "Close" button is clicked
     closeBtn.onclick = function() {
         accountmain.classList.remove('active')
     }
