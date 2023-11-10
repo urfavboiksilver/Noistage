@@ -14,19 +14,19 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             title: "Best to Relax",
             artist: "Lofi_Music",
-            source: "../musics/music1.mp3",
+            source: "../music1/music1.mp3",
             albumpic: "../img/album/music1.png"
         },
         {
             title: "Morning!",
             artist: "Lofi_Music",
-            source: "../musics/music2.mp3",
+            source: "../music2/music2.mp3",
             albumpic: "../img/album/music2.png"
         },
         {
             title: "Good Night!",
             artist: "Lofi_Music",
-            source: "../musics/music3.mp3",
+            source: "../music3/music3.mp3",
             albumpic: "../img/album/music3.png"
         },
         // Add more tracks as needed
