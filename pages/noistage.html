@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/noistage.css" type="text/css">
+    <link rel="icon" href="../img/logo.png" type="img/xicon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Noistage</title>
+</head>
+<body>
+    <div class="transition" id="transition"></div>
+    <nav class="noistagenav">
+        <div onclick="redirect(this)" data-href="../index.html">
+            <img class="logonav" src="../img/logo.png" alt="Noistage"> <h2>Noistage</h2>
+        </div>
+        <div>
+            <div class="timer">
+                <span class="timer__part timer_part-mintues">00</span>
+                <span class="timer__part">:</span>
+                <span class="timer__part timer_part-seconds">00</span>
+                <button type="button" class="timer__btn timer__btn--control timer_btn--start">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button type="button" class="timer__btn timer__btn--reset">
+                    <i class="fa-regular fa-clock"></i>
+                </button>
+            </div>
+        </div>
+        <div>
+            <a class="tbtn notes" href="#notes"><i class="fa-solid fa-newspaper"></i> </a>
+            <button class="tbtn notes"><i class="fa-solid fa-gamepad"></i> </button>
+            <button class="tbtn notes"><i class="fa-solid fa-user"></i> </button>
+        </div>
+    </nav>
+    <div class="maindiv"> 
+        <section class="maingnoistage">
+        <div class="musicsection">
+            <div class="musicdiv">
+                <div class="musicimg" id="musicimg">
+                </div>
+                <div class="musictc">
+                    <div class="title"><h3><span id="musicTitle">Title</span> - <span id="musicArtist">Artist</span></h3></div>
+                    <div class="control">
+                        <div class="controlsmini">
+                            <button type="button" id="prevButton" class="music_btn music_btn--controls music_btn_start" onclick="prevTrack()">
+                                <i class="fa-solid fa-backward"></i>
+                            </button>
+                            <button type="button" id="playButton" class="music_btn music_btn--controls music_btn_start" onclick="playpauseTrack()">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <button type="button" id="nextButton" class="music_btn music_btn--controls music_btn_start" onclick="nextTrack()">
+                                <i class="fa-solid fa-forward"></i>
+                            </button>
+                        </div>
+                        <script src="../js/music.js"></script>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-volume-up" id="volume_icon" onclick="toggleMute()"></i>
+                        <input type="range" min="0" max="100" value="100" id="musicvolume">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="qt2">Click on the icon to play your preferred sounds; more than one can be played simultaneously. You can also adjust the volume of the sounds by moving the blue line that appears when you click the icon.</div>
+        <div class="playlists">
+          <h4></h4>
+        </div>
+        <div class="sounds">
+            <div class="noise">
+                <i class="fa-solid fa-cloud-rain" id="rainsound"></i>
+                <input type="range" id="rainvolume" min="0" max="100" value="50" class="none" />
+              </div>
+              
+              <div class="noise">
+                <i class="fa-solid fa-cloud-bolt" id="thundersound"></i>
+                <input type="range" id="thundervolume" min="0" max="100" value="50" class="none" />
+              </div>
+              
+              <div class="noise">
+                <i class="fa-solid fa-wind" id="windsound"></i>
+                <input type="range" id="windvolume" min="0" max="100" value="50" class="none" />
+              </div>
+              
+              <div class="noise">
+                <i class="fa-solid fa-tree" id="treesound"></i>
+                <input type="range" id="treevolume" min="0" max="100" value="50" class="none" />
+              </div>
+              
+              <div class="noise">
+                <i class="fa-solid fa-leaf" id="leafsound"></i>
+                <input type="range" id="leafvolume" min="0" max="100" value="50" class="none" />
+              </div>
+              
+              <div class="noise">
+                <i class="fa-solid fa-water" id="watersound"></i>
+                <input type="range" id="watervolume" min="0" max="100" value="50" class="none" />
+              </div>
+              
+              <div class="noise">
+                <i class="fa-solid fa-mug-hot" id="coffeesound"></i>
+                <input type="range" id="coffeevolume" min="0" max="100" value="50" class="none" />
+              </div>
+              
+              <div class="noise">
+                <i class="fa-solid fa-fire" id="firesound"></i>
+                <input type="range" id="firevolume" min="0" max="100" value="50" class="none" />
+              </div>
+              
+              <div class="noise">
+                <i class="fa-solid fa-moon" id="moonsound"></i>
+                <input type="range" id="moonvolume" min="0" max="100" value="50" class="none" />
+              </div>
+              
+              <div class="noise">
+                <i class="fa-solid fa-train" id="trainsound"></i>
+                <input type="range" id="trainvolume" min="0" max="100" value="50" class="none" />
+              </div>
+              
+              <div class="noise">
+                <i class="fa-solid fa-fan" id="fansound"></i>
+                <input type="range" id="fanvolume" min="0" max="100" value="50" class="none" />
+              </div>
+              
+              <div class="noise">
+                <i class="fa-solid fa-car" id="carsound"></i>
+                <input type="range" id="carvolume" min="0" max="100" value="50" class="none" />
+              </div>
+              
+              <div class="noise">
+                <i class="fa-solid fa-jet-fighter-up" id="jetsound"></i>
+                <input type="range" id="jetvolume" min="0" max="100" value="50" class="none" />
+              </div>
+              
+              <div class="noise">
+                <i class="fa-solid fa-soap" id="soapsound"></i>
+                <input type="range" id="soapvolume" min="0" max="100" value="50" class="none" />
+              </div>
+              
+              <div class="noise">
+                <i class="fa-solid fa-sun" id="sunsound"></i>
+                <input type="range" id="sunvolume" min="0" max="100" value="50" class="none" />
+              </div>
+              
+              <div class="noise">
+                <i class="fa-solid fa-hippo" id="hipposound"></i>
+                <input type="range" id="hippovolume" min="0" max="100" value="50" class="none" />
+              </div>
+              
+        </div>
+    </section>
+    <section class="notes" id="notes">
+        <div class="qt">You can write, take and save notes here to make your life easier. To add a note, just simply click the box with "Add Note" written on it and you can start writing whatever you want and as much as you want. And just double-click on the box that you want to delete. Hope you have a nice time!</div>
+        <div class="function">
+         <div id="app">
+            <button class="add-note" type="button">Add note</button>
+        </div>
+    </section>
+        <div class="app">
+            <h5>Bored? You can test your knowledge here. In these quizzes, questions from Geography, History and Science are included to test yourself and you can see how good you are after the quizzes with the marks. To play the quiz, simply click on the answer you think is correct. Have Fun!</h5>
+            <div class="quiz">
+                <h2 id="question">Question goes here</h2>
+                <div id="answer-buttons">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+                <button id="next-btn">Next</button>
+            </div>
+
+</div>
+    <script src="../js/quiz.js"></script>
+    <footer>
+      <div><p><i class="fa-regular fa-copyright"></i> 2023 - 2023 Noistage.com</p></div>  
+      <div><a href="features.html">Features</a><a href="howitworks.html">How It Works</a><a href="aboutus.html">About Us</a></div>
+    </footer>
+    <script src="../js/timer.js"></script>
+    <script src="../js/trasition.js"></script>
+    <script src="../js/sound.js"></script>
+    <script src="../js/note.js"></script>
+
+</body>
+</html>
